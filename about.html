@@ -23,15 +23,15 @@
             </ul>
         </nav>
         <div class="hero hero-light">
-            <small>Nuestra mision</small>
+            <small class="small">Nuestra mision</small>
             <h1>Te proporcionamos el poder de acceder a educacion de primer nivel</h1>
             <p>Pensamos en la educación como una construcción, conformada por multiples bloques. Nuestra construcción debe tener una base firme para que se mantenga sólida y continúe creciendo, además de ciertos componentes que tienen que ir fortaleciendo la edificación en el tiempo. Nostros te ayudamos con eso.</p>
         </div>
         <main class="main-light">
             <div class="main__title about">
-                <h3>Quienes somos</h3>
-                <p>Somos una compañia de educadores que buscan que los grandes maestros y profesionales de distintas areas planmen sus conocimientos y experiencias en libros interactivos, para que tengan alcance a cualquier persona que desee crecer personalmente.</p>
-                <div>
+                <h3 class="about__title">Quienes somos</h3>
+                <p class="about__para">Somos una compañia de educadores que buscan que los grandes maestros y profesionales de distintas areas planmen sus conocimientos y experiencias en libros interactivos, para que tengan alcance a cualquier persona que desee crecer personalmente.</p>
+                <div class="about__sponsors">
                     <h5>Se capacitan con nosotros</h5>
                     <div>
                         <ion-icon class="icon__company" name="logo-github"></ion-icon>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="traction__item">
                         <p>80+</p>
-                        <small>Profesionales y masterminds</small>
+                        <small>Profesionales</small>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                         <img src="assets/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="Doe Joe retrato - CEO BORIS">
                         <h4>Doe Joe</h4>
                         <h5>CEO - Co-Fundador de Boris</h5>
-                        <p>Doe Joe acompaño a Joe en la aventura de crear BORIS. Con experiencia en el campo de la educacion superior en universidades de gran prestigio, posee varias maestrias en metodologias de enseñanzas.</p>
+                        <p>Doe Joe acompaño a Joe en la aventura de crear BORIS. Con experiencia en el campo de la educacion posee varias maestrias.</p>
                     </div>
                     <div class="about__item">
                         <img src="assets/images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" alt="">
@@ -113,34 +113,35 @@
         <footer>
             <div>
                 <h3 class="footer__form">Mantenete al dia con las nuevas publicaciones</h3>
-                <form action="POST">
+                <div class="form__item">
+                    <form action="POST">
+                        <div>
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" placeholder="Joe Doe">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
+                        </div>
+                        <button>Suscribirse</button>
+                    </form>
                     <div>
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" placeholder="Joe Doe">
+                        <p>Seguinos en nuestras redes</p>
+                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
+                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
+                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
-                    </div>
-                    <button>Suscribirse</button>
-                </form>
-                <div>
-                    <p>Seguinos en nuestras redes</p>
-                    <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
-                    <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
-                    <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
                 </div>
             </div>
-            <div>
+            <div class="footer__container">
                 <img class="footer__logo" src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
-                <ul>
-                    <li><a href="books.html">Libros</a></li>
-                    <li><a href="platform.html">Plataforma</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="books.html">Libros</a></li>
+                    <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
+                    <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
+                    <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
                 </ul>
-                <small>© 2023 Boris.  Todos los derechos reservados.</small>
-                <small>Hecho con (L) por Claudia Ziemba</small>
+                <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con (L) por Claudia Ziemba</small>
             </div>
         </footer>
 

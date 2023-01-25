@@ -25,7 +25,7 @@
             </nav>
             <div class="hero hero-black">
                 <h1>Accede a la plataforma</h1>
-                <form action="POST">
+                <form action="POST" class="platform__form">
                     <div>
                         <label for="user">Usuario</label>
                         <input type="text" id="user" name="user" placeholder="jDoe">
@@ -41,34 +41,35 @@
             <footer>
                 <div>
                     <h3 class="footer__form">Mantenete al dia con las nuevas publicaciones</h3>
-                    <form action="POST">
+                    <div class="form__item">
+                        <form action="POST">
+                            <div>
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" placeholder="Joe Doe">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
+                            </div>
+                            <button>Suscribirse</button>
+                        </form>
                         <div>
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" placeholder="Joe Doe">
+                            <p>Seguinos en nuestras redes</p>
+                            <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
+                            <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
+                            <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
-                        </div>
-                        <button>Suscribirse</button>
-                    </form>
-                    <div>
-                        <p>Seguinos en nuestras redes</p>
-                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
-                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
-                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
                     </div>
                 </div>
-                <div>
+                <div class="footer__container">
                     <img class="footer__logo" src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
-                    <ul>
-                        <li><a href="books.html">Libros</a></li>
-                        <li><a href="#">Plataforma</a></li>
-                        <li><a href="about.html">Sobre Nosotros</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="books.html">Libros</a></li>
+                        <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
+                        <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
+                        <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
                     </ul>
-                    <small>© 2023 Boris.  Todos los derechos reservados.</small>
-                    <small>Hecho con (L) por Claudia Ziemba</small>
+                    <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con (L) por Claudia Ziemba</small>
                 </div>
             </footer>
     
