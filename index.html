@@ -7,146 +7,198 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Boris</title>
 </head>
     <body>
-        <nav>
-            <div class="navbrand">
-                <a href="index.html"><img src="assets/images/logo-color.png" alt="Logo Boris"></a>
+        <header>
+            <nav>
+                <a class="navbrand" href="index.html"><img src="assets/images/logo-color.png" alt="Logo Boris"></a>
+                <ul>
+                    <li><a href="*">Home</a></li>
+                    <li><a href="books.html">Libros</a></li>
+                    <li><a href="platform.html">Plataforma</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-1 text-center text-uppercase">Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
+                    <p class="text-center">Boris es la unica plataforma que cubre todas tus necesidades de educacióna través de libros interactivos creados por profesionales del area</p>
+                    <ion-icon class="hero__arrow animate__animated animate__bounce" name="arrow-down-outline"></ion-icon>
+                </div>
             </div>
-            <ul>
-                <li><a href="books.html">Libros</a></li>
-                <li><a href="platform.html">Plataforma</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
-            <p>Boris es la unica plataforma que cubre todas tus necesidades de educacióna través de libros interactivos creados por profesionales del area</p>
-            <ion-icon class="hero__arrow animate__animated animate__bounce" name="arrow-down-outline"></ion-icon>
         </div>
         <main>
-            <div class="main__title">
-                <h3>Todo lo que necesitas para comenzar a aprender</h3>
-                <p>Con la infraestructura de una plataforma que te acompaña en todo momento.</p>
-            </div>
-            <div class="container__main">
-                <div class="box">
-                    <h4>Algoritmos de aprendizaje automatico en profundidad</h4>
-                    <div class="box__link">
-                        <a class="link" href="/books.html#algo">Vadim Smolyakov
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="m-1">Todo lo que necesitas para comenzar a aprender</h2>  
+                    </div>
+                    <div class="col m-4">
+                        <p>Con la infraestructura de una plataforma que te acompaña en todo momento.</p>
                     </div>
                 </div>
-                <div class="box">
-                    <h4>Breve historia del arte</h4>
-                    <div class="box__link">
-                        <a class="link" href="/books.html#arte">Hodge Susie
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+                <div class="row row-col-3">
+                    <div class="box border border-light">
+                        <h3>Algoritmos de aprendizaje automatico en profundidad</h3>
+                        <div class="box__link">
+                            <a class="link" href="/books.html#algo">Vadim Smolyakov
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <h4>Redes informaticas</h4>
-                    <div class="box__link">
-                        <a class="link"href="/books.html#red">Iacono Miguel
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+                    <div class="box border border-light">
+                        <h3>Breve historia del arte</h3>
+                        <div class="box__link">
+                            <a class="link" href="/books.html#arte">Hodge Susie
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <h4>Pasteleria argentina</h4>
-                    <div class="box__link">
-                        <a class="link" href="/books.html#past">Nari Gustavo
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+                    <div class="box border border-light">
+                        <h3>Redes informaticas</h3>
+                        <div class="box__link">
+                            <a class="link"href="/books.html#red">Iacono Miguel
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <h4>Astronomía para ser entendida</h4>
-                    <div class="box__link">
-                        <a class="link" href="/books.html#astro">Costa Eduardo
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+                    <div class="box border border-light">
+                        <h3>Pasteleria argentina</h3>
+                        <div class="box__link">
+                            <a class="link" href="/books.html#past">Nari Gustavo
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <h4>Aprende MSQL</h4>
-                    <div class="box__link">
-                        <a class="link" href="">Rick Silva
-                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                        </a>
+                    <div class="box border border-light">
+                        <h3>Astronomía para ser entendida</h3>
+                        <div class="box__link">
+                            <a class="link" href="/books.html#astro">Costa Eduardo
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box border border-light">
+                        <h3>Aprende MSQL</h3>
+                        <div class="box__link">
+                            <a class="link" href="">Rick Silva
+                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <div class="updates">
-            <div class="main__title">
-                <h3>Novedades</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col my-5">
+                    <div class="main__title">
+                        <h3>Novedades</h3>
+                    </div>
+                </div>
             </div>
-            <div class="updates__container">
+            <div class="row row-col-3 mb-5">
                 <div class="updates__item">
-                    <img src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Imagen identificativa del Libro Ingeniero Lego">
-                    <h5>El ingeniero LEGO</h5>
-                    <a class="updates__button" href="">
+                    <img class="img-fluid" src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Imagen identificativa del Libro Ingeniero Lego">
+                    <h4>El ingeniero LEGO</h4>
+                    <a class="updates__button border border-dark text-uppercase" href="">
                         Lee mas
                     </a>
                 </div>
                 <div class="updates__item">
-                    <img src="assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="Imagen identificativa del Libro Modelado Python">
-                    <h5>Modelado y simulación en Python</h5>
-                    <a class="updates__button" href="">
+                    <img class="img-fluid" src="assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="Imagen identificativa del Libro Modelado Python">
+                    <h4>Modelado y simulación en Python</h4>
+                    <a class="updates__button border border-dark text-uppercase" href="">
                         Lee mas
                     </a>
                 </div>
                 <div class="updates__item">
-                    <img src="assets/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="Imagen identificativa del Libro Rust Web">
-                    <h5>Rust para desarrolladores web</h5>
-                    <a class="updates__button" href="">
+                    <img class="img-fluid" src="assets/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="Imagen identificativa del Libro Rust Web">
+                    <h4>Rust para desarrolladores web</h4>
+                    <a class="updates__button border border-dark text-uppercase" href="">
                         Lee mas
                     </a>
                 </div>
             </div>
         </div>
         <footer>
-            <div>
-                <h3 class="footer__form">Mantenete al dia con las nuevas publicaciones</h3>
-                <div class="form__item">
-                    <form action="POST">
-                        <div>
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" placeholder="Joe Doe">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-7">
+                                <h3>Mantenete al dia con las nuevas publicaciones</h3>
+                            </div>
+                            <div class="col-4 offset-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <form action="POST">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <label for="name">Nombre completo</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" id="name" name="name" placeholder="Joe Doe" class="float-end">
+                                                </div>
+                                            </div>
+                                            <div class="row my-4">
+                                                <div class="col-8">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="email" id="email" name="email" placeholder="jdoe@mail.com" class="float-end">
+                                                </div>
+                                            </div>
+                                            <button class="text-uppercase">Suscribirse</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Seguinos en nuestras redes</p>
+                                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
+                                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
+                                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li class="footer__list-item"><a href="../index.html">Home</a></li>
+                                    <li class="footer__list-item"><a href="books.html">Libros</a></li>
+                                    <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
+                                    <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
+                                    <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <button>Suscribirse</button>
-                    </form>
-                    <div>
-                        <p>Seguinos en nuestras redes</p>
-                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
-                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
-                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con (L) por Claudia Ziemba</small>
                     </div>
                 </div>
             </div>
-            <div class="footer__container">
-                <img class="footer__logo" src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
-                <ul class="footer__list">
-                    <li class="footer__list-item"><a href="books.html">Libros</a></li>
-                    <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
-                    <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
-                    <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
-                </ul>
-                <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con (L) por Claudia Ziemba</small>
-            </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
