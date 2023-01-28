@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Boris</title>
 </head>
@@ -14,7 +15,7 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand navbrand ms-5" href="index.html">
-                    <img src="assets/images/logo-color.png" alt="Logo Boris">
+                    <img src="../assets/images/logo-color.png" alt="Logo Boris">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="navbarCollapse" aria-controls="navbarCollapse"
@@ -27,101 +28,133 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/books.html">Libros</a>
+                            <a class="nav-link" href="./books.html">Libros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/platform.html">Plataforma</a>
+                            <a class="nav-link" href="./platform.html">Plataforma</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/about.html">Sobre Nosotros</a>
+                            <a class="nav-link" href="./about.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                            <a class="nav-link" href="./contact.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="hero hero-light">
-            <small class="small">Nuestra mision</small>
-            <h1>Te proporcionamos el poder de acceder a educacion de primer nivel</h1>
-            <p>Pensamos en la educación como una construcción, conformada por multiples bloques. Nuestra construcción debe tener una base firme para que se mantenga sólida y continúe creciendo, además de ciertos componentes que tienen que ir fortaleciendo la edificación en el tiempo. Nostros te ayudamos con eso.</p>
+        <div class="hero hero-light container-fluid">
+            <div class="row">
+                <div class="col hero__main">
+                    <h1 class="display-1 text-center text-uppercase mt-5">Te proporcionamos el <span class="text__red">poder</span> de acceder a educacion de <span class="text__red">primer nivel</span></h1>
+                    <p class="text-center mt-5">Pensamos en la educación como una construcción, conformada por multiples bloques. Nuestra construcción debe tener una base firme para que se mantenga sólida y continúe creciendo, además de ciertos componentes que tienen que ir 
+                        fortaleciendo la edificación en el tiempo. <strong class="text__red">Nostros te ayudamos</strong> con eso.</p>
+                </div>
+            </div>
         </div>
         <main class="main-light">
-            <div class="main__title about">
-                <h2 class="about__title">Quienes somos</h2>
-                <p class="about__para">Somos una compañia de educadores que buscan que los grandes maestros y profesionales de distintas areas planmen sus conocimientos y experiencias en libros interactivos, para que tengan alcance a cualquier persona que desee crecer personalmente.</p>
-                <div class="about__sponsors">
-                    <h3>Se capacitan con nosotros</h3>
-                    <div>
-                        <ion-icon class="icon__company" name="logo-github"></ion-icon>
-                        <ion-icon class="icon__company" name="logo-gitlab"></ion-icon>
-                        <ion-icon class="icon__company" name="logo-paypal"></ion-icon>
-                    </div>
-                    <div>
-                        <ion-icon class="icon__company" name="logo-stackoverflow"></ion-icon>
-                        <ion-icon class="icon__company" name="logo-reddit"></ion-icon>
+            <div class="row mb-5 mt-5 pt-5">
+                <div class="col-4">
+                    <h2 class="display-5 mb-5">Quienes somos</h2>  
+                    <p class="color__secondary">Somos una compañia de educadores que buscan que los grandes maestros y profesionales de distintas areas planmen sus conocimientos y experiencias en libros interactivos, para que tengan alcance a cualquier persona que desee crecer personalmente.</p>
+                </div>
+                <div class="col-6 offset-2">
+                    <h2>Se capacitan con nosotros</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <ion-icon class="display-4 me-5" name="logo-github"></ion-icon>
+                                <ion-icon class="display-4 me-5" name="logo-gitlab"></ion-icon>
+                                <ion-icon class="display-4 me-5" name="logo-paypal"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ion-icon class="display-4 ms-5" name="logo-stackoverflow"></ion-icon>
+                                <ion-icon class="display-4 ms-5" name="logo-reddit"></ion-icon>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="main__title about">
-                <h3>Nuestra traccion</h3>
-                <div class="traction">
+            <div class="row mb-5 mt-5 pt-5">
+                <h2 class="display-5 mb-5">Nuestra traccion</h2>  
+                <div class="col">
                     <div class="traction__item">
                         <p>500+</p>
                         <small>Titulos en la coleccion</small>
                     </div>
+                </div>
+                <div class="col">
                     <div class="traction__item">
                         <p>60K+</p>
                         <small>Suscriptores</small>
                     </div>
+                </div>
+                <div class="col">
                     <div class="traction__item">
                         <p>80+</p>
                         <small>Profesionales</small>
                     </div>
                 </div>
             </div>
-            <div class="main__title about">
-                <h3>Nuestro equipo</h3>
-                <div class="about">
-                    <div class="about__item">
-                        <img src="assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="Joe Doe retrato - CEO BORIS">
-                        <h4>Joe Doe</h4>
-                        <h5>CEO - Fundador de Boris</h5>
-                        <p>Joe Doe es la mente detras de la creacion de BORIS como plataforma educativa. Joe es educador por mas de 20 años, con un Master en educacion superior.</p>
-                    </div>
-                    <div class="about__item">
-                        <img src="assets/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="Doe Joe retrato - CEO BORIS">
-                        <h4>Doe Joe</h4>
-                        <h5>CEO - Co-Fundador de Boris</h5>
-                        <p>Doe Joe acompaño a Joe en la aventura de crear BORIS. Con experiencia en el campo de la educacion posee varias maestrias.</p>
-                    </div>
-                    <div class="about__item">
-                        <img src="assets/images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" alt="">
-                        <h4>Linda D</h4>
-                        <h5>CTO</h5>
-                        <p>Linda D realizo una educacion en Economia y Finanzas, trabajando para grandes compañias internacionales y nacionales.</p>
-                    </div>
+            <div class="row mb-5 mt-5 pt-5">
+                <h2 class="display-5 mb-5">Nuestro equipo</h2>  
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" class="card-img-top" alt="Joe Doe retrato - CEO BORIS">
+                        <div class="card-body">
+                          <h3 class="card-title">Joe Doe</h3>
+                          <h4 class="card-text color__primary">CEO - Fundador de Boris</h4>
+                          <p class="card-text">Joe Doe es la mente detras de la creacion de BORIS como plataforma educativa. Joe es educador por mas de 20 años, con un Master en educacion superior.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/assets/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" class="card-img-top" alt="Doe Joe retrato - CEO BORIS">
+                        <div class="card-body">
+                          <h3 class="card-title">Doe Joe</h3>
+                          <h4 class="card-text color__primary">CEO - Co-Fundador de Boris</h4>
+                          <p class="card-text">Doe Joe acompaño a Joe en la aventura de crear BORIS. Con experiencia en el campo de la educacion posee varias maestrias.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card"  style="width: 20rem;">
+                        <img src="/assets/images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" class="card-img-top" alt="Joe Doe retrato - CEO BORIS">
+                        <div class="card-body">
+                          <h3 class="card-title">Linda D</h3>
+                          <h4 class="card-text color__primary">CTO</h4>
+                          <p class="card-text">Linda D realizo una educacion en Economia y Finanzas, trabajando para grandes compañias internacionales y nacionales.</p>
+                        </div>
+                      </div>
                 </div>
             </div>
-            <div class="main__title about">
-                <h3>Nuestros valores</h3>
-                <div class="values">
+            <div class="row mb-5 mt-5 pt-5">
+                <h2 class="display-5 mb-5">Nuestros valores</h2>  
+                <div class="col-3">
                     <div class="values__item">
                         <ion-icon class="values__icon" name="logo-steam"></ion-icon>
                         <h4>Trabajo en equipo</h4>
                         <p>Creemos en la colaboracion y compartir con todos los miembros de la comunidad.</p>
                     </div>
+                </div>
+                <div class="col-3">
                     <div class="values__item">
                         <ion-icon class="values__icon" name="chevron-forward-circle-outline"></ion-icon>
                         <h4>Proactividad como motor</h4>
                         <p>Sabemos que una actitud proactiva mueve montañas.</p>
                     </div>
+                </div>
+                <div class="col-3">
                     <div class="values__item">
                         <ion-icon class="values__icon" name="flash-outline"></ion-icon>
                         <h4>Apostamos en vos</h4>
                         <p>No nos intimida la incertidumbre y siempre apostamos a dar lo mejor.</p>
                     </div>
+                </div>
+                <div class="col-3">
                     <div class="values__item">
                         <ion-icon class="values__icon" name="unlink-outline"></ion-icon>
                         <h4>Sabemos como hacerlo</h4>
@@ -131,38 +164,66 @@
             </div>
         </main>
         <footer>
-            <div>
-                <h3 class="footer__form">Mantenete al dia con las nuevas publicaciones</h3>
-                <div class="form__item">
-                    <form action="POST">
-                        <div>
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" placeholder="Joe Doe">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-7">
+                                <h3>Mantenete al dia con las nuevas publicaciones</h3>
+                            </div>
+                            <div class="col-4 offset-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <form action="POST">
+                                            <div>
+                                                <label for="name" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control form-control-sm" id="name" aria-describedby="nameHelp" required>
+                                                <div id="nameHelp" class="form-text">Nombre completo</div>
+                                            </div>
+                                            <div>
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control form-control-sm" id="pw" aria-describedby="emailHelp" required>
+                                                <div id="emailHelp" class="form-text">Email valido</div>
+                                            </div>
+                                            <button type="submit" class="btn btn-light text-uppercase btn-enviar">Suscribirse</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Seguinos en nuestras redes</p>
+                                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
+                                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
+                                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="jdoe@mail.com">
-                        </div>
-                        <button>Suscribirse</button>
-                    </form>
-                    <div>
-                        <p>Seguinos en nuestras redes</p>
-                        <a href="www.facebook.com/boris"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
-                        <a href="www.twitter.com/boris"><ion-icon class="social__icon" name="logo-twitter"></ion-icon></a>
-                        <a href="www.instagra.com/boris"><ion-icon class="social__icon" name="logo-instagram"></ion-icon></a>
                     </div>
                 </div>
-            </div>
-            <div class="footer__container">
-                <img class="footer__logo" src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
-                <ul class="footer__list">
-                    <li class="footer__list-item"><a href="../index.html">Home</a></li>
-                    <li class="footer__list-item"><a href="books.html">Libros</a></li>
-                    <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
-                    <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
-                    <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
-                </ul>
-                <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con (L) por Claudia Ziemba</small>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="footer__logo" src="../assets/images/boris-website-favicon-color.png" alt="Logo boris">
+                            </div>
+                            <div class="col mt-5">
+                                <ul class="footer__nav">
+                                    <li class="footer__list-item"><a href="/">Home</a></li>
+                                    <li class="footer__list-item"><a href="./books.html">Libros</a></li>
+                                    <li class="footer__list-item"><a href="./platform.html">Plataforma</a></li>
+                                    <li class="footer__list-item"><a href="./about.html">Sobre Nosotros</a></li>
+                                    <li class="footer__list-item"><a href="./contact.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con <ion-icon class="github__link" name="heart-outline"></ion-icon> por <a class="github__link" href="https://github.com/ckonata">Claudia Ziemba</a></small>
+                    </div>
+                </div>
             </div>
         </footer>
 

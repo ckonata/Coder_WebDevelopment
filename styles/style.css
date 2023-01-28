@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+    text-decoration: none;
 }
 
 *,
@@ -31,6 +32,7 @@ nav a,
     color: black;
 }
 
+.text__red,
 .nav-link:hover{
     color: #FF4900;
 }
@@ -91,10 +93,11 @@ nav a,
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-top: 2rem;
+    text-decoration: none;
 }
 
 .hero.hero-light{
-    background-color: #F1F0EC;
+    background-color: white;
 }
 
 .hero.hero-light p{
@@ -151,7 +154,6 @@ main{
     background-color: rgb(255, 72, 0);
     width: 20rem;
     padding: 1rem 2rem;
-    margin: 1rem;
 }
 
 .traction__item p{
@@ -223,7 +225,7 @@ main{
 }
 
 .icon__company{
-    margin: 1rem;
+    font-size: 2rem;
 }
 
 .box{
@@ -246,12 +248,6 @@ main{
     position: absolute;
     bottom: 0;
     padding-bottom: 1rem;
-}
-
-.link,
-.link .icon{
-    color: #8A887C;
-    vertical-align: middle;
 }
 
 .updates__item{
@@ -278,7 +274,13 @@ main{
     padding: .3rem .8rem;
     font-size: .8rem;
     line-height: 1rem;
-    color: black;
+    border: 1px solid #FF4900;
+}
+
+.updates__button:hover{
+    color: white;
+    background-color: #FF4900;
+    transition: ease .5s;
 }
 
 .books__main{
@@ -312,13 +314,8 @@ main{
     margin: 1rem 0;
 }
 
-.box__course_img{
-    display: inline; 
-}
-
-.box__course_img img{
-    width: 40%;
-    margin: 1rem;
+.box__course_img {
+    width: 100%;
 }
 
 .left{
@@ -468,4 +465,49 @@ form button{
 
 .footer__logo{
     width: 10%;
+}
+
+.card__link-animation{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.card__link-animation .card__hover:hover{
+    margin-right: 10px;
+    transition: ease-in-out .5s;
+}
+
+.github__link,
+.card-link{
+    color: #FF4900;
+    text-decoration: none;
+}
+
+.color__primary,
+.card__hover:hover{
+    color: #FF4900;
+}
+
+.github__link:hover,
+.color__secondary{
+    color: #a0a09f;
+}
+
+.books__container{
+    background-color: black;
+    padding: 0 20rem;
+    color: white;
+}
+
+.book__card{
+    background-color: black;
+    border: 1px solid #F1F0EC;
+}
+
+.btn-enviar:hover{
+    background-color: #FF4900;
+    color: #F1F0EC;
 }
