@@ -14,23 +14,42 @@
 </head>
     <body>
         <header>
-            <nav>
-                <a class="navbrand" href="index.html"><img src="assets/images/logo-color.png" alt="Logo Boris"></a>
-                <ul>
-                    <li><a href="*">Home</a></li>
-                    <li><a href="books.html">Libros</a></li>
-                    <li><a href="platform.html">Plataforma</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand navbrand ms-5" href="index.html">
+                    <img src="assets/images/logo-color.png" alt="Logo Boris">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/books.html">Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/platform.html">Plataforma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <div class="hero container-fluid">
             <div class="row">
-                <div class="col">
-                    <h1 class="display-1 text-center text-uppercase">Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
-                    <p class="text-center">Boris es la unica plataforma que cubre todas tus necesidades de educacióna través de libros interactivos creados por profesionales del area</p>
-                    <ion-icon class="hero__arrow animate__animated animate__bounce" name="arrow-down-outline"></ion-icon>
+                <div class="col hero__main">
+                    <h1 class="display-1 text-center text-uppercase mt-5">Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
+                    <p class="text-center mt-5">Boris es la unica plataforma que cubre todas tus necesidades de educacióna través de libros interactivos creados por profesionales del area</p>
+                    <ion-icon class="hero__arrow animate__animated animate__bounce mt-5" name="arrow-down-outline"></ion-icon>
                 </div>
             </div>
         </div>
@@ -45,52 +64,54 @@
                     </div>
                 </div>
                 <div class="row row-col-3">
-                    <div class="box border border-light">
-                        <h3>Algoritmos de aprendizaje automatico en profundidad</h3>
-                        <div class="box__link">
-                            <a class="link" href="/books.html#algo">Vadim Smolyakov
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Algoritmos de aprendizaje automatico en profundidad</h5>
+                          <a href="/books.html#algo" class="card-link link">Vadim Smolyakov
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
-                    <div class="box border border-light">
-                        <h3>Breve historia del arte</h3>
-                        <div class="box__link">
-                            <a class="link" href="/books.html#arte">Hodge Susie
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Algoritmos de aprendizaje automatico en profundidad</h5>
+                          <a href="/books.html#algo" class="card-link link">Vadim Smolyakov
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
-                    <div class="box border border-light">
-                        <h3>Redes informaticas</h3>
-                        <div class="box__link">
-                            <a class="link"href="/books.html#red">Iacono Miguel
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Breve historia del arte</h5>
+                          <a class="card-link link "href="/books.html#arte">Hodge Susie
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
-                    <div class="box border border-light">
-                        <h3>Pasteleria argentina</h3>
-                        <div class="box__link">
-                            <a class="link" href="/books.html#past">Nari Gustavo
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Redes informaticas</h5>
+                          <a class="card-link link" href="/books.html#red">Iacono Miguel
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
-                    <div class="box border border-light">
-                        <h3>Astronomía para ser entendida</h3>
-                        <div class="box__link">
-                            <a class="link" href="/books.html#astro">Costa Eduardo
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Pasteleria argentina</h5>
+                          <a class="card-link link" href="/books.html#past">Nari Gustavo
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
-                    <div class="box border border-light">
-                        <h3>Aprende MSQL</h3>
-                        <div class="box__link">
-                            <a class="link" href="">Rick Silva
-                                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                            </a>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Astronomía para ser entendida</h5>
+                          <a class="card-link link" href="/books.html#astro">Costa Eduardo
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="card w-25 box border border-light" >
+                        <div class="card-body">
+                          <h5 class="card-title">Aprende MSQL</h5>
+                          <a class="card-link link" href="/books.html#past">Rick Silva
+                            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
@@ -105,26 +126,32 @@
                 </div>
             </div>
             <div class="row row-col-3 mb-5">
-                <div class="updates__item">
-                    <img class="img-fluid" src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Imagen identificativa del Libro Ingeniero Lego">
-                    <h4>El ingeniero LEGO</h4>
-                    <a class="updates__button border border-dark text-uppercase" href="">
-                        Lee mas
-                    </a>
+                <div class="col-4">
+                    <div class="card mb-5">
+                        <img src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Ingeniero LEGO</h5>
+                            <a class="card-link link updates__button updates__button border border-dark text-uppercase" href="/books.html#astro">Lee mas</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="updates__item">
-                    <img class="img-fluid" src="assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="Imagen identificativa del Libro Modelado Python">
-                    <h4>Modelado y simulación en Python</h4>
-                    <a class="updates__button border border-dark text-uppercase" href="">
-                        Lee mas
-                    </a>
+                <div class="col-4">
+                    <div class="card mb-5">
+                        <img src="assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Modelado y simulación en Python</h5>
+                            <a class="card-link link updates__button updates__button border border-dark text-uppercase" href="/books.html#astro">Lee mas</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="updates__item">
-                    <img class="img-fluid" src="assets/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="Imagen identificativa del Libro Rust Web">
-                    <h4>Rust para desarrolladores web</h4>
-                    <a class="updates__button border border-dark text-uppercase" href="">
-                        Lee mas
-                    </a>
+                <div class="col-4">
+                    <div class="card mb-5">
+                        <img src="assets/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Modelado y simulación en Python</h5>
+                            <a class="card-link link updates__button updates__button border border-dark text-uppercase" href="/books.html#astro">Lee mas</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,16 +202,16 @@
                 <div class="row">
                     <div class="col">
                         <div class="row">
-                            <div class="col">
-                                <img src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
+                            <div class="col-4">
+                                <img class="footer__logo" src="assets/images/boris-website-favicon-color.png" alt="Logo boris">
                             </div>
-                            <div class="col">
-                                <ul>
-                                    <li class="footer__list-item"><a href="../index.html">Home</a></li>
-                                    <li class="footer__list-item"><a href="books.html">Libros</a></li>
-                                    <li class="footer__list-item"><a href="platform.html">Plataforma</a></li>
-                                    <li class="footer__list-item"><a href="about.html">Sobre Nosotros</a></li>
-                                    <li class="footer__list-item"><a href="contact.html">Contacto</a></li>
+                            <div class="col mt-5">
+                                <ul class="footer__nav">
+                                    <li class="footer__list-item"><a href="*">Home</a></li>
+                                    <li class="footer__list-item"><a href="./pages/books.html">Libros</a></li>
+                                    <li class="footer__list-item"><a href="./pages/platform.html">Plataforma</a></li>
+                                    <li class="footer__list-item"><a href="./pages/about.html">Sobre Nosotros</a></li>
+                                    <li class="footer__list-item"><a href="./pages/contact.html">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>

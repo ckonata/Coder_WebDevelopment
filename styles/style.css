@@ -24,13 +24,15 @@ body{
 
 nav{
     background-color: #F1F0EC;
-    height: 10vh;
-    text-align: justify;
 }
 
-nav ul li a{
+nav a,
+.nav-link{
     color: black;
-    margin: 0 5rem;
+}
+
+.nav-link:hover{
+    color: #FF4900;
 }
 
 .small{
@@ -41,7 +43,14 @@ nav ul li a{
 .hero{
     background-color: #FF4900;
     padding: 0 20rem;
-    height: 60vh;
+}
+
+.hero__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
 }
 
 .hero__lider{
@@ -51,19 +60,19 @@ nav ul li a{
 
 .hero h1{
     font-weight: 700;
-    padding: 8rem 0 2rem 0;
 }
 
 .hero p{
     color:#F1F0EC;
     font-size: 1.5rem;
     font-weight: 200;
-    padding: 0 5rem;
 }
 
 .hero__arrow{
     font-size: 3rem;
     animation: bounce 2s infinite;
+    display: block;
+    text-align: center;
 }
 
 .hero.hero-black{
@@ -224,6 +233,7 @@ main{
     margin: 2rem;
     vertical-align: middle;
     position: relative;
+    background-color: black;
 }
 
 .box h4{
@@ -426,8 +436,13 @@ form button{
 }
 
 .footer__list-item a{
-    color:#F1F0EC;
+    color:#FF4900;
     margin: 0 2rem;
+    text-decoration: none;
+}
+
+.footer__list-item a:hover{
+    color:#F1F0EC;
 }
 
 .footer__list{
@@ -444,4 +459,13 @@ form button{
 .about__para,
 .about__sponsors{
     display: block;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width: 10%;
 }
