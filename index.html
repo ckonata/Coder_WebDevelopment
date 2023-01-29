@@ -47,23 +47,23 @@
         <div class="hero container-fluid">
             <div class="row">
                 <div class="col hero__main">
-                    <h1 class="display-1 text-center text-uppercase mt-5">Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
+                    <h1 class="display-4 text-center text-uppercase mt-5 pt-5">Aprende de los <span class="hero__lider">mejores</span> de la industria</h1>
                     <p class="text-center mt-5">Boris es la unica plataforma que cubre todas tus necesidades de educacióna través de libros interactivos creados por profesionales del area</p>
                     <ion-icon class="hero__arrow animate__animated animate__bounce mt-5" name="arrow-down-outline"></ion-icon>
                 </div>
             </div>
         </div>
         <main>
-            <div class="container">
+            <div class="container container-sm">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-lg-7 col-12">
                         <h2 class="m-1">Todo lo que necesitas para comenzar a aprender</h2>  
                     </div>
                     <div class="col m-4">
                         <p class="color__secondary">Con la infraestructura de una plataforma que te acompaña en todo momento.</p>
                     </div>
                 </div>
-                <div class="row row-cols-3">
+                <div class="row row-cols-lg-3 row-col-1">
                     <div class="col">
                         <div class="card w-5 box border border-light" >
                             <div class="card-body">
@@ -141,8 +141,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-3 mb-5">
-                <div class="col-4">
+            <div class="row row-cols-lg-3 row-cols-1 mb-5">
+                <div class="col">
                     <div class="card mb-5">
                         <img src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
                         <div class="card-body">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <div class="card mb-5">
                         <img src="assets/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
                         <div class="card-body">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <div class="card mb-5">
                         <img src="assets/images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" class="card-img-top" alt="Imagen identificativa del Libro Ingeniero Lego">
                         <div class="card-body">
@@ -172,14 +172,14 @@
             </div>
         </div>
         <footer>
-            <div class="container-fluid">
+            <div class="container-fluid container-sm">
                 <div class="row">
                     <div class="col">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-lg-7 col-12">
                                 <h3>Mantenete al dia con las nuevas publicaciones</h3>
                             </div>
-                            <div class="col-4 offset-1">
+                            <div class="col-lg-4 col-12 offset-lg-1">
                                 <div class="row">
                                     <div class="col">
                                         <form>
@@ -212,9 +212,6 @@
                 <div class="row">
                     <div class="col">
                         <div class="row">
-                            <div class="col-4">
-                                <img class="footer__logo" src="../assets/images/boris-website-favicon-color.png" alt="Logo boris">
-                            </div>
                             <div class="col mt-5">
                                 <ul class="footer__nav">
                                     <li class="footer__list-item"><a href="/">Home</a></li>
@@ -228,22 +225,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <small class="footer__text">© 2023 Boris.  Todos los derechos reservados. Hecho con <ion-icon class="github__link" name="heart-outline"></ion-icon> por <a class="github__link" href="https://github.com/ckonata">Claudia Ziemba</a></small>
+                    <div class="col-12 text-center">
+                        <small class="footer__owner">© 2023 Boris.  Todos los derechos reservados. Hecho con <ion-icon class="github__link" name="heart-outline"></ion-icon> por <a class="github__link" href="https://github.com/ckonata"> Claudia Ziemba</a></small>
                     </div>
-                </div>
-            </div>
-
-            <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3">
-                <div id="sendMessage" class="toast-hide" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="toast-header">
-                        <strong class="me-auto">Boris</strong>
-                        <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                        ¡Te has suscrito a nuestras alertas!
-                    </div>
-
                 </div>
             </div>
         </footer>
@@ -251,17 +235,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script>
-            
-            var suscribeBtn = document.getElementById("subscribe");
-            suscribeBtn.onclick = function() {
-                console.log("bye")
-                var toastList = [].slice.call(document.querySelectorAll(".toast"));
-                var toasts = toastList.map(function(t){
-                    return new boostrap.Toast(t)
-                });
-                toasts.forEach(toast => toast.show());
-            };
-        </script>
     </body>
 </html>
