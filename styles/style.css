@@ -146,10 +146,6 @@ main{
     margin-bottom: 2rem;
 }
 
-.traction{
-    margin-top: 2rem;
-}
-
 .traction__item{
     background-color: rgb(255, 72, 0);
     width: 20rem;
@@ -169,37 +165,6 @@ main{
     font-weight: 200;
     font-size: 1rem;
     display: block;
-}
-
-.about__item{
-    width: 30%;
-    margin: 1rem;
-}
-
-.about__item img{
-    width: 100%;
-    height: 20rem;
-    border-radius: 1rem;
-    object-fit: cover;
-}
-
-.about__item h4,
-.about__item h5{
-    margin: 1rem 0;
-}
-
-.about__item h5{
-    padding-bottom: .5rem;
-    border-bottom: 1px solid #8A887C;
-}
-
-.about__item p{
-    font-weight: 200;
-    font-size: .9rem;
-    color: black;
-    letter-spacing: .5px;
-    margin-bottom: 1rem;
-    width: 100%;
 }
 
 .values__item{
@@ -224,10 +189,6 @@ main{
     width: 100%;
 }
 
-.icon__company{
-    font-size: 2rem;
-}
-
 .box{
     width: 20rem;
     height: 10rem;
@@ -244,32 +205,6 @@ main{
     font-size: 1.5rem;
 }
 
-.box__link{
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 1rem;
-}
-
-.updates__item{
-    width: 25rem;
-    height: 18rem;
-    padding: 0 .5rem;
-    border-right: 1px solid #8A887C;
-    margin-bottom: 2rem;
-}
-
-.updates__item img{
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
-
-.updates__item h5{
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding: .5rem 0;
-}
-
 .updates__button{
     padding: .3rem .8rem;
     font-size: .8rem;
@@ -283,43 +218,8 @@ main{
     transition: ease .5s;
 }
 
-.books__main{
-    background-color: black;
-    color:#F1F0EC;
-    padding: 5rem 18rem;
-    border-bottom: 1px solid #8A887C;;
-}
-
-.box__course{
-    margin: 1rem 0 5rem 0;
-}
-
-.box__course_item{
-    width: 40%;
-    margin: 1rem 0;
-}
-
-.box__course_item h4{
-    color: #FF4900;
-    font-size: 1.6rem;
-    letter-spacing: .3px;
-    margin: 1rem 0;
-}
-
-.box__course_item p{
-    color: #8A887C;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    font-weight: 200;
-    margin: 1rem 0;
-}
-
 .box__course_img {
     width: 100%;
-}
-
-.left{
-    direction: rtl;
 }
 
 footer{
@@ -369,68 +269,6 @@ form button{
     transition: ease-in .3s;
 }
 
-.footer__logo{
-    position: absolute;
-    bottom: 0;
-}
-
-.contact{
-    background-color: #F1F0EC;
-    padding: 0 25rem;
-    height: 60vh;
-    width: 100%;
-    padding-top: 6rem;
-}
-
-.contact h1{
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 5rem;
-    text-align: left;
-    padding: 5rem 0 0rem 0;
-}
-
-.contact p{
-    font-weight: 200;
-    font-size: 1rem;
-    text-align: left;
-    width: 80%;
-}
-
-.contact form{
-    margin: 2rem;
-}
-
-.contact form label{
-    background-color:  #F1F0EC;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.contact form input{
-    background-color:  #F1F0EC;
-    font-weight: 200;
-    color: black;
-    font-size: .7rem;
-}
-
-.contact form button{
-    background-color:  #F1F0EC;
-    font-weight: 700;
-    color: black;
-    font-size: 1rem;
-    border: 1px solid black;
-    padding: .5rem 3rem;
-}
-
-
-.footer__text{
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    left: 40rem;
-}
-
 .footer__list-item a{
     color:#FF4900;
     margin: 0 4rem;
@@ -449,12 +287,6 @@ form button{
 
 .footer__container{
     margin-top: 20rem;
-}
-
-.about__title,
-.about__para,
-.about__sponsors{
-    display: block;
 }
 
 .footer__nav{
