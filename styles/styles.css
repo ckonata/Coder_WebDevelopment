@@ -36,6 +36,10 @@ nav a {
   color: black;
 }
 
+#text-hero {
+  color: black;
+}
+
 .text__red,
 .nav-link:hover {
   color: #FF4900;
@@ -62,8 +66,8 @@ nav a {
 }
 .hero p {
   color: #F1F0EC;
-  font-size: 1.5rem;
   font-weight: 200;
+  font-size: 1.5rem;
 }
 .hero .hero__arrow {
   font-size: 3rem;
@@ -80,9 +84,10 @@ nav a {
 }
 .hero.hero-black a {
   color: #FF4900;
+  font-weight: normal;
+  font-size: 1.5rem;
   border: 1px solid #FF4900;
   padding: 0.3rem 1.2rem;
-  font-size: 1.5rem;
   text-transform: uppercase;
   margin-top: 2rem;
   text-decoration: none;
@@ -113,15 +118,15 @@ main {
 }
 .traction__item p {
   color: black;
-  text-align: center;
   font-weight: 700;
   font-size: 2rem;
+  text-align: center;
 }
 .traction__item small {
   color: black;
-  text-align: center;
   font-weight: 200;
   font-size: 1rem;
+  text-align: center;
   display: block;
 }
 
@@ -130,10 +135,10 @@ main {
   width: 15rem;
 }
 .values__item p {
-  font-weight: 200;
-  margin: 1rem 0;
   color: black;
+  font-weight: 200;
   font-size: 1rem;
+  margin: 1rem 0;
   width: 100%;
 }
 
@@ -156,9 +161,10 @@ main {
   background-color: black;
 }
 .box h4 {
+  color: black;
   font-weight: 200;
-  width: 90%;
   font-size: 1.5rem;
+  width: 90%;
 }
 
 .updates__button {
@@ -184,6 +190,7 @@ footer {
   position: relative;
 }
 footer div h3 {
+  color: #F1F0EC;
   font-weight: 500;
   font-size: 2.5rem;
   padding: 0 0 0.5rem 0;
@@ -206,10 +213,10 @@ form input {
 form button {
   border: 1px solid #F1F0EC;
   padding: 0.3rem 0.8rem;
-  font-size: 0.6rem;
   color: black;
-  margin: 1rem 0;
   font-weight: 700;
+  font-size: 0.6rem;
+  margin: 1rem 0;
 }
 
 .social__icon {
@@ -241,7 +248,9 @@ form button {
 
 .footer__nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
 }
 .footer__nav li {
   margin: 0 2rem 2rem 2rem;
@@ -265,6 +274,8 @@ form button {
 
 .card__link-animation {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   gap: 2px;
   position: absolute;
@@ -314,8 +325,20 @@ form button {
   color: #F1F0EC;
 }
 
+#breadcrumb__container {
+  align-self: flex-start;
+}
+#breadcrumb__container .breadcrumb .breadcrumb-item a {
+  color: #FF4900;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  margin: none;
+  text-transform: none;
+}
+
 @media (max-width: 1700px) {
-  .display-4 {
+  .font-responsive {
     font-size: 4vw;
   }
   .footer__list-item {
@@ -330,7 +353,7 @@ form button {
   }
 }
 @media (max-width: 1400px) {
-  .display-4 {
+  .font-responsive {
     font-size: 3vw;
   }
   footer {
@@ -341,7 +364,7 @@ form button {
   }
 }
 @media (max-width: 1200px) {
-  .display-4 {
+  .font-responsive {
     font-size: 4vw;
   }
   .footer__list-item a {
@@ -362,7 +385,7 @@ form button {
   }
 }
 @media (max-width: 772px) {
-  .display-4 {
+  .font-responsive {
     font-size: 2.7rem;
   }
   footer,
@@ -371,7 +394,10 @@ form button {
     padding: 2rem;
   }
   .footer__nav {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .footer__text {
     text-align: center;
