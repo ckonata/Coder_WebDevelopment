@@ -298,12 +298,17 @@ form button{
 .footer__owner{
     text-align: center;
 }
+
+.book__container{
+    height: 18rem;
+}
 .card__link-animation{
     display: flex;
     align-items: center;
     gap: 2px;
     position: absolute;
     bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .card__link-animation .card__hover:hover{
