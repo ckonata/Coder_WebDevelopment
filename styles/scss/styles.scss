@@ -1,0 +1,424 @@
+@import "./resets";
+@import "./variables";
+@import "./functions";
+
+.navbrand img{
+ width: 10rem;
+}
+
+nav{
+ background-color: $secondary-color;
+ margin-bottom: 4rem;
+
+ a{
+  color: $text-color;
+ }
+}
+
+.nav-link{
+ color: $text-color;
+}
+
+.text__red,
+.nav-link:hover{
+ color: $primary-color;
+}
+
+.small{
+ position: absolute;
+ top: 10rem;
+}
+
+.hero__main{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.hero{
+ background-color: $primary-color;
+ padding: 10rem 20rem;
+
+ h1{
+  font-weight: fontWeight("bold");
+ }
+
+ p{
+  color:$secondary-color;
+  font-size: 1.5rem;
+  font-weight: fontWeight("light");
+ }
+
+ #{&}__arrow{
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+  display: block;
+  text-align: center;
+ }
+
+ &#{&}-black{
+  background-color: $text-color;
+  color: $secondary-color;
+
+  h1{
+   background-color: $text-color;
+  }
+
+  a{
+   color: $primary-color;
+   border: 1px solid $primary-color;
+   padding: .3rem 1.2rem;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   margin-top: 2rem;
+   text-decoration: none;
+  }
+ }
+
+ &#{&}-light{
+  background-color: $secondary-color;
+
+  a{
+   color: $text-color;
+  }
+ }
+} 
+
+main{
+ background-color: $text-color;
+ color:$secondary-color;
+ padding: 5rem 18rem;
+}
+
+.main-light{
+ background-color: $secondary-color;
+ color: $text-color;
+ margin-top: 1px solid $accent-color
+}
+
+.traction__item{
+ background-color: $primary-color;
+ width: 20rem;
+ padding: 1rem 2rem;
+
+ p{
+  color: $text-color;
+  text-align: center;
+  font-weight: fontWeight("bold");
+  font-size: 2rem;
+ }
+
+ small{
+  color: $text-color;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  display: block;
+ }
+}
+
+
+.values__item{
+ margin: 2rem 0;
+ width: 15rem;
+
+ p{
+  font-weight: fontWeight("light");
+  margin: 1rem 0;
+  color: $text-color;
+  font-size: 1rem;
+  width: 100%;
+ }
+}
+
+.values__icon{
+ background-color: $text-color;
+ padding: 1rem;
+ border-radius: .6rem;
+ color: $secondary-color;
+ box-shadow: rgb(255, 72, 0, 0.5) 0px 4px 16px, rgb(255, 72, 0, 0.5) 0px 8px 24px, rgb(255, 72, 0, 0.1) 0px 16px 56px;
+ margin-bottom: 1rem;
+}
+
+.box{
+ width: 100%;
+ height: 10rem;
+ padding: 1rem;
+ margin: 2rem;
+ vertical-align: middle;
+ position: relative;
+ background-color: $text-color;
+
+ h4{
+  font-weight: fontWeight("light");
+  width: 90%;
+  font-size: 1.5rem;
+ }
+}
+
+.updates__button{
+ padding: .3rem .8rem;
+ font-size: .8rem;
+ line-height: 1rem;
+ border: 1px solid $primary-color;
+
+ &:hover{
+  color: $secondary-color;
+  background-color: $primary-color;
+  transition: ease .5s;
+ }
+}
+
+.box__course_img {
+ width: 100%;
+}
+
+footer{
+ background-color: $text-color;
+ color:$secondary-color;
+ padding: 5rem 18rem 1rem 18rem;
+ position: relative;
+
+ div{
+  h3{
+   font-weight: fontWeight("medium");
+   font-size: 2.5rem;
+   padding: 0 0 0.5rem 0;
+  }
+ }
+}
+
+form{
+ font-weight: fontWeight("light");
+ 
+}
+
+form label,
+form input{
+ background-color: $text-color;
+}
+
+form input{
+ border: .5px solid $accent-color;
+ color:$secondary-color;
+}
+
+form button{
+ border: 1px solid $secondary-color;
+ padding: .3rem .8rem;
+ font-size: .6rem;
+ color: $text-color;
+ margin: 1rem 0;
+ font-weight: fontWeight("bold");
+}
+
+.social__icon{
+ color: $secondary-color;
+ margin: 1rem;
+
+ &:hover{
+  color: $primary-color;
+  transition: ease-in .3s;
+ }
+}
+
+.footer__list{
+ position: absolute;
+ right: 10rem;
+ bottom: 15rem;
+
+ a{
+  color:$primary-color;
+  margin: 0 4rem;
+  text-decoration: none;
+
+  &:hover{
+   color:$secondary-color;
+  }
+ }
+}
+
+.footer__container{
+ margin-top: 20rem;
+}
+
+.footer__nav{
+ display: flex;
+ justify-content: center;
+
+ li{
+  margin:0 2rem 2rem 2rem;
+  
+  a{
+   text-decoration: none;
+   color: $secondary-color;
+  }
+
+  &:hover{
+   color: $primary-color;
+   transition: 1s ease-in-out;
+
+  }
+ }
+}
+
+.footer__owner{
+ text-align: center;
+}
+
+.book__container{
+ height: 18rem;
+}
+
+.card__link-animation{
+ display: flex;
+ align-items: center;
+ gap: 2px;
+ position: absolute;
+ bottom: 1rem;
+ padding-top: 1rem;
+
+ & .card__hover:hover{
+  margin-right: 10px;
+  transition: ease-in-out .5s;
+ }
+}
+
+.github__link{
+ color: $primary-color;
+ text-decoration: none;
+
+ &:hover{
+  color: $accent-color;
+ }
+}
+
+.card-link{
+ color: $primary-color;
+ text-decoration: none;
+}
+
+.color__primary,
+.card__hover:hover{
+    color: $primary-color;
+}
+
+.color__secondary{
+ color: $accent-color;
+}
+
+.books__container{
+ background-color: $text-color;
+ padding: 0 20rem;
+ color: $secondary-color;
+}
+
+.book__card{
+ background-color:  $text-color;
+ border: 1px solid $secondary-color;
+}
+
+.btn-enviar:hover{
+ background-color: $primary-color;
+ color:  $secondary-color;
+}
+
+@media (max-width: 1700px) {
+ .display-4 {
+  font-size: 4vw;
+ }
+
+ .footer__list-item{
+  margin: 1rem;
+  a{
+   margin: 0;
+  }
+ } 
+
+ .footer__text{
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+ }
+}
+
+
+@media (max-width: 1400px) {
+ .display-4 {
+  font-size: 3vw;
+ }
+
+ footer{
+  padding: 2rem;
+ }
+
+ .hero{
+  padding: 10rem 5rem;
+ }
+}
+
+@media (max-width: 1200px) {
+ .display-4 {
+  font-size: 4vw;
+ }
+
+ .footer__list-item a{
+  margin: 0;
+ }
+
+ .books__container{
+  padding: 0 10rem;
+ }
+
+ .card__link-animation{
+  margin-top: 2rem;
+ }
+
+ .hero.hero-black a{
+  font-size: .8rem;
+ }
+
+ .book__container{
+  height: fit-content;
+ }
+}
+
+
+
+@media (max-width: 772px) {
+ .display-4 {
+  font-size: 2.7rem;
+ }
+
+ footer,
+ main,
+ .hero{
+  padding: 2rem;
+ }
+
+ .footer__nav{
+  flex-direction: column;
+ }
+
+ .footer__text{
+  text-align: center;
+  left: 0;
+  position: relative;
+  padding: 2rem 2rem 0 2rem;
+ }
+
+ .footer__list-item{
+  margin: 1rem;
+  text-align: center;
+ }
+
+ .footer__logo{
+  position: relative;
+  bottom: 2rem;
+  right: 0;
+ }
+
+ .books__container{
+  padding: 0 2rem;
+ }
+}

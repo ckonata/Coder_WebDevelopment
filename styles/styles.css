@@ -1,0 +1,394 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.navbrand img {
+  width: 10rem;
+}
+
+nav {
+  background-color: #F1F0EC;
+  margin-bottom: 4rem;
+}
+nav a {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+.text__red,
+.nav-link:hover {
+  color: #FF4900;
+}
+
+.small {
+  position: absolute;
+  top: 10rem;
+}
+
+.hero__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-color: #FF4900;
+  padding: 10rem 20rem;
+}
+.hero h1 {
+  font-weight: 700;
+}
+.hero p {
+  color: #F1F0EC;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.hero .hero__arrow {
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+  display: block;
+  text-align: center;
+}
+.hero.hero-black {
+  background-color: black;
+  color: #F1F0EC;
+}
+.hero.hero-black h1 {
+  background-color: black;
+}
+.hero.hero-black a {
+  color: #FF4900;
+  border: 1px solid #FF4900;
+  padding: 0.3rem 1.2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.hero.hero-light {
+  background-color: #F1F0EC;
+}
+.hero.hero-light a {
+  color: black;
+}
+
+main {
+  background-color: black;
+  color: #F1F0EC;
+  padding: 5rem 18rem;
+}
+
+.main-light {
+  background-color: #F1F0EC;
+  color: black;
+  margin-top: 1px solid #8A887C;
+}
+
+.traction__item {
+  background-color: #FF4900;
+  width: 20rem;
+  padding: 1rem 2rem;
+}
+.traction__item p {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.traction__item small {
+  color: black;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  display: block;
+}
+
+.values__item {
+  margin: 2rem 0;
+  width: 15rem;
+}
+.values__item p {
+  font-weight: 200;
+  margin: 1rem 0;
+  color: black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.values__icon {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  color: #F1F0EC;
+  box-shadow: rgba(255, 72, 0, 0.5) 0px 4px 16px, rgba(255, 72, 0, 0.5) 0px 8px 24px, rgba(255, 72, 0, 0.1) 0px 16px 56px;
+  margin-bottom: 1rem;
+}
+
+.box {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  margin: 2rem;
+  vertical-align: middle;
+  position: relative;
+  background-color: black;
+}
+.box h4 {
+  font-weight: 200;
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+.updates__button {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  border: 1px solid #FF4900;
+}
+.updates__button:hover {
+  color: #F1F0EC;
+  background-color: #FF4900;
+  transition: ease 0.5s;
+}
+
+.box__course_img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: #F1F0EC;
+  padding: 5rem 18rem 1rem 18rem;
+  position: relative;
+}
+footer div h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 0 0 0.5rem 0;
+}
+
+form {
+  font-weight: 200;
+}
+
+form label,
+form input {
+  background-color: black;
+}
+
+form input {
+  border: 0.5px solid #8A887C;
+  color: #F1F0EC;
+}
+
+form button {
+  border: 1px solid #F1F0EC;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.6rem;
+  color: black;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.social__icon {
+  color: #F1F0EC;
+  margin: 1rem;
+}
+.social__icon:hover {
+  color: #FF4900;
+  transition: ease-in 0.3s;
+}
+
+.footer__list {
+  position: absolute;
+  right: 10rem;
+  bottom: 15rem;
+}
+.footer__list a {
+  color: #FF4900;
+  margin: 0 4rem;
+  text-decoration: none;
+}
+.footer__list a:hover {
+  color: #F1F0EC;
+}
+
+.footer__container {
+  margin-top: 20rem;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav li {
+  margin: 0 2rem 2rem 2rem;
+}
+.footer__nav li a {
+  text-decoration: none;
+  color: #F1F0EC;
+}
+.footer__nav li:hover {
+  color: #FF4900;
+  transition: 1s ease-in-out;
+}
+
+.footer__owner {
+  text-align: center;
+}
+
+.book__container {
+  height: 18rem;
+}
+
+.card__link-animation {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: absolute;
+  bottom: 1rem;
+  padding-top: 1rem;
+}
+.card__link-animation .card__hover:hover {
+  margin-right: 10px;
+  transition: ease-in-out 0.5s;
+}
+
+.github__link {
+  color: #FF4900;
+  text-decoration: none;
+}
+.github__link:hover {
+  color: #8A887C;
+}
+
+.card-link {
+  color: #FF4900;
+  text-decoration: none;
+}
+
+.color__primary,
+.card__hover:hover {
+  color: #FF4900;
+}
+
+.color__secondary {
+  color: #8A887C;
+}
+
+.books__container {
+  background-color: black;
+  padding: 0 20rem;
+  color: #F1F0EC;
+}
+
+.book__card {
+  background-color: black;
+  border: 1px solid #F1F0EC;
+}
+
+.btn-enviar:hover {
+  background-color: #FF4900;
+  color: #F1F0EC;
+}
+
+@media (max-width: 1700px) {
+  .display-4 {
+    font-size: 4vw;
+  }
+  .footer__list-item {
+    margin: 1rem;
+  }
+  .footer__list-item a {
+    margin: 0;
+  }
+  .footer__text {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+@media (max-width: 1400px) {
+  .display-4 {
+    font-size: 3vw;
+  }
+  footer {
+    padding: 2rem;
+  }
+  .hero {
+    padding: 10rem 5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .display-4 {
+    font-size: 4vw;
+  }
+  .footer__list-item a {
+    margin: 0;
+  }
+  .books__container {
+    padding: 0 10rem;
+  }
+  .card__link-animation {
+    margin-top: 2rem;
+  }
+  .hero.hero-black a {
+    font-size: 0.8rem;
+  }
+  .book__container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 772px) {
+  .display-4 {
+    font-size: 2.7rem;
+  }
+  footer,
+  main,
+  .hero {
+    padding: 2rem;
+  }
+  .footer__nav {
+    flex-direction: column;
+  }
+  .footer__text {
+    text-align: center;
+    left: 0;
+    position: relative;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .footer__list-item {
+    margin: 1rem;
+    text-align: center;
+  }
+  .footer__logo {
+    position: relative;
+    bottom: 2rem;
+    right: 0;
+  }
+  .books__container {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
