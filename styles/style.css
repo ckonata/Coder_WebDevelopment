@@ -170,7 +170,7 @@ main{
 
 .values__item{
     margin: 2rem 0;
-    width: 20rem;
+    width: 15rem;
 }
 
 .values__icon{
@@ -226,7 +226,7 @@ main{
 footer{
     background-color: black;
     color:#F1F0EC;
-    padding: 5rem 18rem 0 18rem;
+    padding: 5rem 18rem 1rem 18rem;
     position: relative;
 }
 
