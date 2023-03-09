@@ -1,21 +1,24 @@
-html {
- box-sizing: border-box;
-}
-
 body{
  font-family: 'Sofia Sans', sans-serif ;
 }
 
 * {
+ box-sizing: border-box;
  margin: 0;
  padding: 0;
  border: 0;
- text-decoration: none;
- list-style: none;
 }
 
 *,
 *:before,
 *:after {
  box-sizing: inherit;
+}
+
+ul li{
+ list-style: none;
+}
+
+a{
+ text-decoration: none;
 }
